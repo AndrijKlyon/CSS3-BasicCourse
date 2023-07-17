@@ -7,4 +7,4 @@
 
 ## Ссылки
 
-Ссылка на видеокурс в youtube: [Базовый полный курс (2023)](https://www.youtube.com/watch?v=fUsy05B1iLA&list=PLvcCyIZOok9LmmbZO-8S45ywcoA7y0sgm).
+Ссылка на видеокурс в youtube: [CSS3. Базовый полный курс (2023)](https://www.youtube.com/watch?v=fUsy05B1iLA&list=PLvcCyIZOok9LmmbZO-8S45ywcoA7y0sgm).
