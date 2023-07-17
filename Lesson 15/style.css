@@ -1,0 +1,187 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+
+    counter-reset: sec-counter;
+}
+
+/* Общие стили */
+h1 {
+    background-color: firebrick;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: firebrick;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+h2::before {
+    counter-increment: sec-counter;
+    content: "Section " counter(sec-counter) ". ";
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    padding: 30px;
+    max-width: 50%;
+    max-height: 250px;
+}
+
+/* Tables */
+table {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+thead {
+    background-color: lightpink;
+}
+
+table caption {
+    margin: 7px 0;
+}
+
+#table-1 {
+    border-collapse: separate;
+    empty-cells: hide;
+    table-layout: fixed;
+    width: 280px;
+    border-spacing: 6px;
+}
+
+#table-2 {
+    border-collapse: collapse;
+    caption-side: bottom;
+    table-layout: auto;
+    width: 70%;
+}
+
+/* Lists */
+li {
+    line-height: 1.5;
+}
+
+#list-1 {
+    list-style-type: square;
+}
+
+#list-2 {
+    list-style: none;
+}
+
+#list-3 {
+    list-style-image: url("ball.png");
+}
+
+/* Forms */
+form {
+    line-height: 1.8;
+}
+
+.label {
+    min-width: 50px;
+    display: inline-block;
+}
+
+.field {
+    width: 200px;
+    padding: 4px 8px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    outline: none;
+}
+
+.field:focus {
+    border-color: indianred;
+    box-shadow: 1px 2px 2px #eee;
+    caret-color: firebrick;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-right: 8px;
+    accent-color: indianred;
+}
+
+button {
+    background-color: firebrick;
+    color: white;
+    border: 1px solid firebrick;
+    padding: 6px 12px;
+    margin-top: 12px;
+}
+
+/* Quotes */
+.quotes {
+    quotes: "\2033" "\2033";
+}
+
+/* Cursor */
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightpink;
+    padding: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.pointer-events {
+    pointer-events: none;
+}
+
+/* SVG image */
+.svg-image {
+    width: 80px;
+    height: 80px;
+    stroke-width: 2px;
+    stroke: firebrick;
+}
+
+/* Special CSS values */
+.special-values {
+    color: firebrick;
+}
+
+.special-values p {
+    padding: 8px 0;
+}
+
+.initial {
+    color: initial;
+}
+
+.transparent-color {
+    color: transparent;
+}
+
+.current-color {
+    border-bottom: 1px solid currentColor;
+}

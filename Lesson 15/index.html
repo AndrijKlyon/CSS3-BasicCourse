@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 15</title>
+</head>
+<body>
+    <h1>Lesson 15</h1>
+    <h2>Tables</h2>
+    <table id="table-1">
+        <caption>Table 1.1 Customers</caption>
+        <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>Peter</td>
+              <td>Pen</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Alex</td>
+              <td>Grow</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="table-2">
+        <caption>Table 1.2 Customers</caption>
+        <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>Peter</td>
+              <td>Pen</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Alex</td>
+              <td>Grow</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Lists</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <ul id="list-1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <ul id="list-2">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <ul id="list-3">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+    </div>
+    <h2>Forms</h2>
+    <form action="#">
+        <div>
+            <label class="label" for="name">Name</label>
+			<input class="field" type="text" id="name" name="name">
+        </div>
+        <div>
+            <label class="label" for="age">Age</label>
+			<input class="field" type="number" id="age" name="age">
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="terms" checked>
+			<label for="terms">I agree with the terms</label>
+        </div>
+        <div>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+			<label for="html">HTML</label><br>
+			<input type="radio" id="css" name="fav_language" value="CSS" checked>
+			<label for="css">CSS</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Quotes</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, <q class="quotes">adipisicing elit. Omnis explicabo maiores aperiam libero fugiat quod reiciendis</q> quia voluptas corporis vel. Esse praesentium perspiciatis repudiandae quia commodi. Rerum consequuntur dignissimos similique!</p>
+    <h2>Cursor</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+           <div class="box cursor-pointer">Pointer</div> 
+        </div>
+        <div class="flex-item">
+            <div class="box cursor-move">Move</div>
+        </div>
+        <div class="flex-item">
+            <div class="box pointer-events"><a href="#">Link</a></div>
+        </div>
+    </div>
+    <h2>SVG</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="svg-image">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+    </svg>
+    <h2>Special CSS-values</h2>
+    <div class="special-values">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, accusamus ex soluta quibusdam nemo natus sed sunt reiciendis nisi id quisquam nihil, doloremque optio voluptatum quas, quis officiis. Illo, fuga.</p>
+        <p class="initial">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum vel iusto necessitatibus recusandae aperiam, excepturi facilis et vero adipisci labore maxime esse repudiandae quidem dolore est cumque a id? Sapiente.</p>
+        <p class="transparent-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam porro veniam temporibus soluta, praesentium ut distinctio corrupti obcaecati, quidem tempora. Vitae beatae, iure reprehenderit quibusdam consectetur excepturi minus nobis.</p>
+        <div class="current-color"></div>
+    </div>
+</body>
+</html>
