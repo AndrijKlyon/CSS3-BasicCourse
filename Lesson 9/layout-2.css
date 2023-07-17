@@ -1,0 +1,58 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 80px auto 150px 200px auto;
+	grid-template-areas: 'logo logo logo'
+						 'banner banner banner'
+						 'intro intro intro'
+						 'box-1 box-2 box-3'
+						 'footer footer footer';
+}
+
+/* Общие стили */
+.box {
+	background-color: blue;
+	color:  white;
+	padding: 12px;
+	border:  5px solid white;
+}
+
+/* Layout */
+.logo {
+	grid-area: logo;
+}
+
+.banner {
+	grid-area: banner;
+}
+
+.intro {
+	grid-area: intro;
+}
+
+.box-1 {
+	grid-area: box-1;
+}
+
+.box-2 {
+	grid-area: box-2;
+}
+
+.box-3 {
+	grid-area: box-3;
+}
+
+.footer {
+	grid-area: footer;
+}
