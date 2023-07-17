@@ -1,0 +1,45 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Общие стили */
+.box {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: 5px solid white;
+}
+
+/* Layout */
+.wrapper {
+    display: flow-root;
+}
+
+.sidebar {
+    width: 30%;
+    height: 200px;
+    float: left;
+}
+
+.main {
+    width: 70%;
+    height: 200px;
+    float: right;
+}
+
+.logo {
+    height: 80px;
+}
+
+.banner {
+    height: 150px;
+}

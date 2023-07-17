@@ -1,0 +1,58 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 16px 0;
+}
+
+.wrapper {
+    background-color: cornsilk;
+}
+
+.wrapper * {
+    padding: 20px;
+}
+
+/* .inline-paragraph {
+    display: inline-block;
+    width: 450px;
+    vertical-align: top;
+} */
+
+/* Float */
+.float-left {
+    float: left
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.flowroot {
+    display: flow-root;
+}
+
+.float-right {
+    float: right;
+}
