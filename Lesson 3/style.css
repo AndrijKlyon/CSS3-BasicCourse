@@ -1,0 +1,150 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: saddlebrown;
+    color: white;
+    margin: 12px 0;
+    padding: 10px;
+}
+
+h2 {
+    color: saddlebrown;
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid saddlebrown;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+[type="submit"] {
+    color: white;
+    background-color: saddlebrown;
+}
+
+a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: saddlebrown;
+    border: 1px solid saddlebrown;
+    text-decoration: none;
+}
+
+.list {
+    line-height: 1.9;
+    padding-left: 20px;
+}
+
+.list li {
+    padding-left: 20px;
+}
+
+/* ПСЕВДОКЛАССЫ */
+/* Исключения */
+p:not(.p-not) {
+    font-style: italic;
+}
+
+/* Состояния полей ввода */
+input:focus {
+    border: 1px solid black;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+/* Состояния ссылок */
+a:hover {
+    color: white;
+    background-color: saddlebrown;
+}
+
+/* Первые и последние дочерние элементы */
+h2:last-of-type {
+    font-style: italic;
+}
+
+li:first-child {
+    color: saddlebrown;
+}
+
+/* Произвольные дочерние элементы */
+li:nth-child(even) {
+    background-color: moccasin;
+}
+
+li:nth-child(3) {
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+/* Единственные дочерние элементы */
+h1:only-of-type {
+    border-bottom: 1px solid moccasin;
+}
+
+/* Пустой элемент */
+li:empty {
+    border-bottom: 1px solid saddlebrown;
+}
+
+/* Элемент с заданным языком контента */
+p:lang(lv) {
+    font-weight: bold;
+}
+
+/* Корневой элемент (body) */
+:root {
+    font-family: 'Arial';
+}
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+/* Первая часть элементов */
+.p-not::first-letter {
+    color: saddlebrown;
+    font-size: 24px;
+}
+
+/* Маркер списка */
+::marker {
+    color: saddlebrown;
+    content: '\2192';
+}
+
+/* Подсказка в элементах ввода */
+input::placeholder {
+    color: saddlebrown;
+}
+
+/* Выделенный текст */
+p::selection {
+    background-color: brown;
+    color: white;
+}
+
+/* Дополнительные элементы в начале и в конце */
+li::before,
+li::after {
+    content: ' " ';
+    color: saddlebrown;
+}
