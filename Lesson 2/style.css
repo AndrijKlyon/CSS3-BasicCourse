@@ -1,0 +1,92 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* Стилизация контента */
+/* ПРОСТЫЕ СЕЛЕКТОРЫ */
+/* Селектор тега */
+h1 {
+    background-color: brown;
+    color: white;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Селектор класса */
+.heading-2 {
+    color: brown;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 12px;
+}
+
+.color-gray {
+    color: dimgray;
+}
+
+.back-gray {
+    background-color: gainsboro;
+}
+
+/* Селектор идентификатора */
+#heading-1 {
+    padding: 10px;
+}
+
+/* Селектор атрибута */
+[title] {
+    padding-left: 40px;
+}
+
+[data-attr^=paragraph] {
+    color: dimgray;
+}
+
+/* СОСТАВНЫЕ СЕЛЕКТОРЫ*/
+/* Элементы с несколькими селекторами */
+.box.back-gray {
+    font-weight: bold;
+}
+
+/* Все элементы с селектором 2, вложенные в элемент с селектором 1 */
+.internal-list li {
+    color: dimgray;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+/* Все элементы с селектором 2, непосредственный родитель которых соответствует селектору 1 */
+li > span {
+    font-weight: bold;
+}
+
+/* Первый элемент с селектором 2, расположенный после элемента с селектором 1 */
+.internal-list-first + li {
+    font-style: italic;
+}
+
+/* Все элементы с селектором 2, которым предшествует элемент с селектором 1 */
+.external-list-first ~ li {
+    color: brown;
+}
+
+/* Несколько селекторов с одинаковыми объявлениями */
+.heading-2, #heading-1 {
+    border-bottom: 1px solid brown;
+}
