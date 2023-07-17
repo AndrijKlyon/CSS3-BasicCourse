@@ -1,0 +1,169 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: forestgreen;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: darkgreen;
+    padding: 12px 6px;
+    margin-top: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    padding: 5px;
+    min-width: 25%;
+    max-width: 50%;
+    max-height: 250px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-box {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* transform */
+.transform-translate:hover {
+    transform: translateX(50px);
+}
+
+.transform-scale {
+    transform: scale(.5);
+}
+
+.transform-rotate {
+    transform: rotate(45deg);
+}
+
+.transform-skew {
+    transform: skew(-20deg);
+}
+
+/* transform-origin */
+.transform-origin-1 {
+    transform-origin: -50% -50%;
+}
+
+.transform-origin-2 {
+    transform-origin: left bottom;
+}
+
+.transform-origin-3 {
+    transform-origin: 100% 50px;
+}
+
+.transform-origin-4 {
+    transform-origin: 150px 150px 100px;
+}
+
+/* clip-path */
+.clippath-circle {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.clippath-ellipse {
+    clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.clippath-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clippath-polygon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+/* filter */
+.filter-blur {
+    filter: blur(2px);
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+.filter-opacity {
+    filter: opacity(.5);
+}
+
+.filter-saturate {
+    filter: saturate(200%);
+}
+
+/* backdrop-filter */
+.back-image {
+    height: 300px;
+    background: lightgreen url(01.jpg) no-repeat center / cover;
+}
+
+.back-filter {
+    padding: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+/* mask */
+.mask-wrapper {
+    width: 500px;
+    height: 250px;
+    -webkit-mask-image: url("mask.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    mask-image: url("mask.png");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+}
+
+/* visibility, opacity */
+.opacity-50 {
+    opacity: .5;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
