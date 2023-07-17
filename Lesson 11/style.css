@@ -1,0 +1,107 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+:root {
+    --primary: #C36A2D;
+    --secondary: #E2C275;
+    --accent1: #EADCA6;
+    --accent2: #FBFBFB;
+}
+
+/* Общие стили */
+h1 {
+    background-color: saddlebrown;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: saddlebrown;
+    padding: 12px 6px;
+}
+
+.flex-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 20%;
+    height: 80px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid white;
+}
+
+/* Colors */
+.saddlebrown {
+    background-color: saddlebrown;
+}
+
+.sienna {
+    background-color: sienna;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.sandybrown {
+    background-color: sandybrown;
+}
+
+.antiquewhite {
+    background-color: antiquewhite;
+}
+
+.hex {
+    background-color: #a55233;
+}
+
+.rgb {
+    background-color: rgb(165, 82, 51);
+}
+
+.rgba {
+    background-color: rgba(165, 82, 51, .5);
+}
+
+.hsl {
+    background-color: hsl(16, 53%, 42%);
+}
+
+.hsla {
+    background-color: hsla(16, 53%, 42%, .5);
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent1 {
+    background-color: var(--accent1);
+}
+
+.accent2 {
+    background-color: var(--accent2);
+}
+
+
