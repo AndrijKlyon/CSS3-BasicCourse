@@ -1,0 +1,212 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: darkred;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: darkred;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    padding: 30px;
+}
+
+/* Transitions */
+.btn-transition {
+    padding: 5px 10px;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid darkred;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-transition:hover {
+    background-color: white;
+    color: darkred;
+}
+
+.box-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box {
+    background-color: darkred;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 30px;
+    max-width: 100px;
+}
+
+.box-1 {
+    transform: translateX(150px);
+    transition: transform .3s ease-in;
+}
+
+.box-wrapper:hover .box-1 {
+    transform: translateX(0);
+}
+
+.box-2 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s .5s ease;
+}
+
+.box-wrapper:hover .box-2 {
+    opacity: 1;
+}
+
+/* Animations */
+.box-animation-1 {
+    animation-name: animation-1;
+    animation-duration: 1.6s;
+    animation-iteration-count: 4;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes animation-1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(600px);
+    }
+}
+
+.heart {
+    margin-top: 50px;
+    width: 80px;
+    height: 80px;
+    animation-name: animation-2;
+    animation-duration: 1.6s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-2 {
+    0% {
+        transform: scale(.5);
+        stroke: red;
+        fill: red;
+    }
+    100% {
+        transform: scale(1.5);
+        stroke: darkred;
+        fill: darkred;
+    }
+}
+
+/* offset */
+.space {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.rocket {
+    width: 70px;
+    height: 70px;
+    stroke: darkred;
+    position: absolute;
+    z-index: 1;
+    offset: path('M 0 200 C 100 20 350 150 500 0') 20deg;
+    animation: moveImg 4s 1s infinite;
+}
+
+@keyframes moveImg {
+    0% {
+        offset-distance: 0;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/* 3D Animations */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Front side image */
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: darkred;
+    color: white;
+    transform: rotateY(180deg);
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
