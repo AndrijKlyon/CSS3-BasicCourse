@@ -1,0 +1,66 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: olivedrab;
+    color: white;
+    padding: 10px;
+    margin: 16px 0;
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: olive;
+    text-decoration: underline solid gainsboro;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+article {
+    margin-bottom: 32px;
+    padding: 16px;
+    border: 1px solid olive;
+}
+
+a {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+/* Наследование */
+.article-1 {
+    color: dimgray;
+}
+
+/* Специфичность */
+.heading-2 {
+    color: olivedrab!important;
+}
+
+#heading-2 {
+    color: darkolivegreen;
+}
+
+.article-2 .p-2 {
+    font-style: normal;
+}
+
+.article-2 .p-1 {
+    font-style: italic;
+}
+
+
