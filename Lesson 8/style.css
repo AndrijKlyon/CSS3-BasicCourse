@@ -1,0 +1,101 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: seagreen;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 18px 0;
+}
+
+h3 {
+    margin: 12px 5px;
+}
+
+.box {
+    background-color: seagreen;
+    color: white;
+    height: 100px;
+    width: 200px;
+    margin: 5px;
+    padding: 12px;
+}
+
+/* Flex */
+.wrapper {
+    background-color: wheat;
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: row-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-flow {
+    flex-flow: row-reverse wrap;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items .box {
+    height: auto;
+}
+
+.align-items {
+    align-items: flex-start;
+}
+
+.align-content {
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.align-self {
+    align-self: center;
+}
+
+.order .box:nth-child(1) {
+    order: 2;
+}
+
+.flex .box:first-child {
+    flex: 2 3 200px;
+}
+
+.flex .box:last-child {
+    flex: 2 1 200px;
+}
+
+/* Flexbox tricks */
+.flex-margin-trick .box:nth-child(2) {
+    margin-right: auto;
+}
+
+.flex-center-trick {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
