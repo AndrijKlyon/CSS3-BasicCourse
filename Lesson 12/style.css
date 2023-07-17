@@ -1,0 +1,108 @@
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: royalblue;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: royalblue;
+    padding: 12px 6px;
+    margin-top: 30px;
+}
+
+/* Images */
+.simple-image {
+    width: 300px;
+    height: 200px;
+}
+
+.back-image {
+    height: 300px;
+    background-image: url('images/02.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+
+    /* background: center / cover url("images/02.jpg") #cccccc; */
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.fit-image {
+    object-fit: cover;
+    background-color: #cccccc;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.overlay-back {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.overlay-back-text,
+.overlay-block-text,
+.contrast-block-text {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-block {
+    background-color: black;
+    bottom: 10%;
+    left: 10%;
+    padding: 30px;
+}
+
+.contrast-block-text {
+    top: 25%;
+    right: 10%;
+    color: black;
+}
+
+.mix-back {
+    background-color: rgba(20, 108, 148, .5);
+}
+
+.mix-image {
+    mix-blend-mode: overlay;
+}

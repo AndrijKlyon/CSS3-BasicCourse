@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 12</title>
+</head>
+<body>
+    <h1>Lesson 12</h1>
+    <h2>Simple image</h2>
+    <img src="images/01.jpg" alt="Summer weather" width="300" height="200">
+    <img src="images/02.jpg" alt="Winter weather" width="300" height="200">
+    <img src="images/03.jpg" alt="Flower Leaves" class="simple-image">
+    <h2>Background image</h2>
+    <div class="back-image"></div>
+    <h2>Object-fit image</h2>
+    <img src="images/01.jpg" class="image-wrapper fit-image" alt="">
+    <h2>Overlay back</h2>
+    <div class="image-wrapper relative">
+        <img src="images/02.jpg" alt="" class="fit-image full-size">
+        <div class="overlay-back full-size absolute"></div>
+        <div class="overlay-back-text full-size absolute flex-center">Winter weather</div>
+    </div>
+    <h2>Overlay block</h2>
+    <div class="image-wrapper relative">
+        <img src="images/01.jpg" alt="" class="fit-image full-size">
+        <div class="overlay-block overlay-block-text absolute">Summer weather</div>
+    </div>
+    <h2>Contrast block</h2>
+    <div class="image-wrapper relative">
+        <img src="images/03.jpg" alt="" class="fit-image full-size">
+        <div class="contrast-block-text absolute">Flower Leaves</div>
+    </div>
+    <h2>mix-blend-mode (background-blend-mode)</h2>
+    <div class="image-wrapper mix-back">
+        <img src="images/02.jpg" alt="" class="fit-image full-size mix-image">
+    </div>
+</body>
+</html>
