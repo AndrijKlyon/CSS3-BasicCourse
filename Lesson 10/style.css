@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&display=swap');
+
+@font-face {
+    font-family: "AlexBrush-Regular";
+    src: url("./fonts/AlexBrush-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Нормализация стилей */
+*, *::before, *::after {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+/* Центрирование и ограничение максимальной ширины контента */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+/* Общие стили */
+h1 {
+    background-color: midnightblue;
+    color: white;
+    padding: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 12px 6px;
+    margin: 18px 0;
+}
+
+h3 {
+    margin-left: 12px;
+    text-decoration: solid underline darkblue;
+}
+
+p {
+    margin-bottom: 30px;
+    padding: 12px;
+}
+
+/* Font properties */
+.font-family {
+    font-family: 'Arial';
+}
+
+.font-size {
+    font-size: 20px;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+/* Text properties */
+.line-height {
+    line-height: 1.7;
+}
+
+.text-decoration {
+    text-decoration: solid underline blue;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-transform {
+    text-transform: capitalize;
+}
+
+.text-align {
+    text-align: end;
+}
+
+.vertical-align {
+    vertical-align: sub;
+}
+
+.text-indent {
+    text-indent: 20px;
+}
+
+.white-space {
+    white-space: pre;
+}
+
+.text-overflow {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Text columns */
+.columns {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid cornflowerblue;
+}
+
+/* Additional fonts */
+.google-font-heading {
+	font-family: 'Merriweather', serif;
+}
+
+.google-font-text {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.local-font {
+	font-family: "AlexBrush-Regular", cursive;
+	font-size: 22px;
+}
